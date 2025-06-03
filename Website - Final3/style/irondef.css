@@ -1,0 +1,648 @@
+/* General Porduct Page formatting */
+.product {
+    padding-top: 110px;
+}
+
+.product .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    padding: 0 25px;
+    padding-top: 10px;
+}
+
+.product-header {
+    text-align: center;
+    padding-bottom: 55px;
+}
+
+/*Iron Deficiency Test Kit*/
+.carousel {
+    position: relative;
+    height: 550px;
+    width: 135%;
+    text-align: center;
+}
+
+.image-test {
+    height: 92%;
+    border: solid;
+    border-color: #27364d;
+    border-width: 10px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-track-container {
+    /*background-color: aqua;*/
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.15s;
+    z-index: 9999;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button--left {
+    left: 20px;
+}
+
+.carousel-button--right {
+    right: 20px;
+}
+
+.carousel-button i {
+    font-size: 40px;
+}
+
+.carousel-nav {
+    /*background-color: blueviolet;*/
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-indicator {
+    border: 0;
+    border-radius: 40%;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.carousel-indicator.current-slide {
+    background-color: #27364d;
+}
+
+.is-hidden {
+    display: none;
+}
+
+/*Iron Deficiency Test Kit--Video*/
+.video {
+    padding-top: 130px;
+    padding-bottom: 90px;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.video-header {
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.containerVid {
+    width: 1000px;
+    height: 562.5px;
+}
+
+/* media queries */
+/* Desktop/Landscape */
+@media (max-width: 1246px) {
+
+    /* Product Info */
+    .product .container {
+        gap: 10px;
+    }
+
+    .carousel {
+        height: 450px;
+        width: 260%;
+    }
+}
+
+@media (min-width: 990px) {
+    .carousel-button--left {
+        left: 50px;
+    }
+
+    .carousel-button--right {
+        right: 50px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .carousel-button--left {
+        left: 70px;
+    }
+
+    .carousel-button--right {
+        right: 70px;
+    }
+}
+
+@media (min-width: 1079px) {
+    .carousel-button--left {
+        left: 90px;
+    }
+
+    .carousel-button--right {
+        right: 90px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .product .container {
+        gap: 0px;
+    }
+
+    .carousel-button--left {
+        left: 120px;
+    }
+
+    .carousel-button--right {
+        right: 120px;
+    }
+}
+
+@media (min-width: 1180px) {
+    .carousel-button--left {
+        left: 160px;
+    }
+
+    .carousel-button--right {
+        right: 160px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    /* Product Info */
+    .product .container {
+        gap: 40px;
+    }
+
+    .carousel {
+        height: 450px;
+        width: 260%;
+    }
+
+    /* Video Section */
+    .containerVid {
+        width: 920px;
+        height: 517.50px;
+    }
+}
+
+@media (min-width: 1250px) {
+    .product .container {
+        gap: 80px;
+    }
+
+    .carousel {
+        width: 160%;
+    }
+
+    .carousel-button--left {
+        left: 40px;
+    }
+
+    .carousel-button--right {
+        right: 40px;
+    }
+}
+
+/* Mobile/Portrait Layout */
+@media (max-width: 961px) {
+
+    /* General */
+    .textXXL,
+    .textXL {
+        font-size: 50px;
+    }
+
+    .textL {
+        font-size: 40px;
+    }
+
+    .textM,
+    .textS {
+        font-size: 32px;
+    }
+
+    /* Product Info */
+    .product .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding-top: 5px;
+    }
+
+    .carousel {
+        height: 450px;
+        width: 70%;
+    }
+
+    .image-test {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .carousel-button--left {
+        left: 75px;
+    }
+
+    .carousel-button--right {
+        right: 75px;
+    }
+
+    .carousel-indicator {
+        width: 18px;
+        height: 18px;
+        margin: 0 15px;
+    }
+
+    .product-header {
+        padding-bottom: 25px;
+    }
+
+    .product-text {
+        padding-top: 25px;
+        text-align: center;
+    }
+
+    /* Video Section */
+    .containerVid {
+        padding-left: 15px;
+        width: 800px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 920px) {
+
+    /* Product Info */
+    .carousel-button--left {
+        left: 60px;
+    }
+
+    .carousel-button--right {
+        right: 60px;
+    }
+
+    /* Video Section */
+    .containerVid {
+        padding-left: 20px;
+    }
+
+}
+
+@media (max-width: 871px) {
+
+    /* General */
+    .textXXL,
+    .textXL {
+        font-size: 45px;
+    }
+
+    .textL,
+    .textM,
+    .textS {
+        font-size: 32px;
+    }
+
+    /* Product Info */
+    .carousel-button--left {
+        left: 45px;
+    }
+
+    .carousel-button--right {
+        right: 45px;
+    }
+
+    /* Video Section */
+    .containerVid {
+        padding-left: 0;
+        width: 800px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 830px) {
+
+    /* Product Info */
+    .carousel-button--left {
+        left: 55px;
+    }
+
+    .carousel-button--right {
+        right: 55px;
+    }
+
+    /* Video Section */
+    .containerVid {
+        padding-left: 50px;
+        width: 640px;
+        height: 360px;
+    }
+}
+
+@media (max-width: 765px) {
+
+    /* Product Info */
+    .carousel-button--left {
+        left: 35px;
+    }
+
+    .carousel-button--right {
+        right: 35px;
+    }
+}
+
+@media (max-width: 715px) {
+
+    /* Product Info */
+    .carousel {
+        width: 90%;
+    }
+
+    .carousel-button--left {
+        left: 30px;
+    }
+
+    .carousel-button--right {
+        right: 30px;
+    }
+
+    /* Video Sectio */
+    .containerVid {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 691px) {
+
+    /* General */
+    .textXXL,
+    .textXL {
+        font-size: 38px;
+    }
+
+    .textL,
+    .textM,
+    .textS {
+        font-size: 25px;
+    }
+
+    /* Video Section */
+    .containerVid {
+        padding-left: 40px;
+        width: 560px;
+        height: 315px;
+    }
+}
+
+@media (max-width: 640px) {
+
+    /* Product Info */
+    .carousel {
+        height: 380px;
+    }
+
+    .carousel-button--left {
+        left: 50px;
+    }
+
+    .carousel-button--right {
+        right: 50px;
+    }
+
+    .carousel-button i {
+        font-size: 30px;
+    }
+
+    .carousel-indicator {
+        width: 16px;
+        height: 16px;
+        margin: 0 15px;
+    }
+
+    /* Video Section */
+    .containerVid {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 610px) {
+
+    /* Video Section */
+    .containerVid {
+        padding-left: 40px;
+        width: 480px;
+        height: 270px;
+    }
+}
+
+@media (max-width: 581px) {
+
+    /* General */
+    .textXXL,
+    .textXL {
+        font-size: 35px;
+    }
+
+    .textL,
+    .textM,
+    .textS {
+        font-size: 25px;
+    }
+
+    /* Product Info */
+    .carousel-button--left {
+        left: 35px;
+    }
+
+    .carousel-button--right {
+        right: 35px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    /* Product Info */
+    .carousel {
+        width: 100%;
+    }
+
+    /* Video Section */
+    .containerVid {
+        padding-left: 35px;
+        width: 400px;
+        height: 225px;
+    }
+}
+
+@media (max-width: 490px) {
+
+    /* General */
+    .textXXL,
+    .textXL {
+        font-size: 30px;
+    }
+
+    .textL,
+    .textM,
+    .textS {
+        font-size: 20px;
+    }
+
+    /* Product Info */
+    .carousel {
+        height: 320px;
+    }
+
+    .carousel-button--left {
+        left: 30px;
+    }
+
+    .carousel-button--right {
+        right: 30px;
+    }
+
+    /* Video Section */
+    .containerVid {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 465px) {
+
+    /* Video Section */
+    .containerVid {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    /* General */
+    .textXXL,
+    .textXL {
+        font-size: 25px;
+    }
+
+    .textL {
+        font-size: 17px;
+    }
+
+    .textM,
+    .textS {
+        font-size: 16px;
+    }
+
+    /* Product Info */
+    .carousel {
+        height: 280px;
+    }
+
+    .carousel-button i {
+        font-size: 25px;
+    }
+
+    .carousel-indicator {
+        width: 12px;
+        height: 12px;
+        margin: 0 15px;
+        margin-top: 10px;
+    }
+
+    /* Video Section */
+    .containerVid {
+        padding-left: 45px;
+        width: 320px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    /* Product Info */
+    .carousel {
+        height: 240px;
+    }
+
+    .image-test {
+        height: 90%;
+    }
+
+    .carousel-button--left {
+        left: 35px;
+    }
+
+    .carousel-button--right {
+        right: 35px;
+    }
+
+    /* Video Section */
+    .video {
+        padding-top: 100px;
+    }
+
+    .containerVid {
+        padding-left: 50px;
+        width: 240px;
+        height: 135px;
+    }
+}
+
+@media (max-width: 350px) {
+
+    /* Product Info */
+    .carousel {
+        width: 110%;
+    }
+
+    .carousel-button--left {
+        left: 20px;
+    }
+
+    .carousel-button--right {
+        right: 20px;
+    }
+
+    /* Video Section */
+    .containerVid {
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 315px) {
+    * {
+        display: none;
+    }
+}

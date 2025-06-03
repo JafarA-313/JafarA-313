@@ -1,0 +1,831 @@
+/*Hero Section*/
+.hero {
+    margin-bottom: 70px;
+    padding-top: 80px;
+}
+
+.hero .container {
+    background: url("../Images/blooddropTrans.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 350px;
+
+    margin-top: 225px;
+    margin-bottom: 270px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero .hero-heading {
+    padding-top: 40px;
+}
+
+.hero .hero-subtext {
+    line-height: 1.1;
+    padding-top: 40px;
+}
+
+/*Bridging the Gap*/
+.bridg {
+    margin-bottom: 100px;
+}
+
+.bridg .container {
+    background: url("../Images/SuperSero.png") no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    border-radius: 35px;
+    height: 500px;
+    padding: 0 20px;
+    padding-top: 50px;
+    margin-bottom: 165px;
+}
+
+.bridg-content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.para1 {
+    line-height: 1.5;
+    width: 65%;
+}
+
+.para2 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 56%
+}
+
+.bridg .redirect {
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/*In Development*/
+.in-development {
+    margin-bottom: 40px;
+}
+
+.in-development .containerSm {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.dev-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.dev-text {
+    padding: 0;
+    font-family: Poppins;
+}
+
+.Product {
+    background-color: rgb(147, 185, 229);
+    padding: 15px;
+    border-radius: 45px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-heading {
+    font-family: Poppins;
+    font-size: 33px;
+    padding-bottom: 15px;
+}
+
+.prod1 {
+    width: 280px;
+}
+
+.prod2 {
+    width: 263px;
+}
+
+.card-subheading,
+.dev-body {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.card-subheading {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.dev-body {
+    padding: 25px 0;
+}
+
+/*FAQ*/
+.faq {
+    padding: 70px 0;
+}
+
+.faq-group {
+    background-color: rgb(147, 185, 229);
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.faq-title {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.faq-group-header {
+    position: relative;
+    padding: 20px;
+}
+
+.faq-group-body {
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: Comfortaa;
+    font-size: 35px;
+}
+
+h4 {
+    font-family: Poppins;
+    font-size: 30px;
+    width: 95%;
+}
+
+.faq-group-header i {
+    position: absolute;
+    right: 5px;
+    top: 17px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.faq .faq-group .faq-group-body {
+    display: none;
+}
+
+.faq .faq-group .faq-group-body.open {
+    display: block;
+}
+
+/* Mobile */
+.bridg .mobile-bridg {
+    display: none;
+}
+
+/* media queries */
+/* Desktop/Landscape */
+@media (max-width: 1300px) {
+    /* Brdiging the Gap*/
+    .bridg .container {
+        height: 450px;
+        padding-top: 0px;
+        margin-bottom: 250px;
+        max-width: 1100px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    /* General */
+    .textXXL {
+        font-size: 55px;
+    }
+
+    .textXL {
+        font-size: 50px;
+    }
+
+    .textL {
+        font-size: 35px;
+    }
+
+    .textM {
+        font-size: 28px;
+    }
+
+    .textS {
+        font-size: 25px;
+    }
+
+    /* Hero */
+    .hero .container {
+        height: 300px;
+        margin-top: 200px;
+        margin-bottom: 290px;
+    }
+
+    /* Bridging the Gap */
+    .bridg .container {
+        height: 420px;
+        margin-bottom: 250px;
+        max-width: 900px;
+    }
+
+    .para1 {
+        width: 70%;
+    }
+
+    .para2 {
+        width: 54%
+    }
+}
+
+/* Mobile/Portrait Layout */
+@media (max-width: 961px) {
+
+    /* General */
+    .textXXL,
+    .textXL {
+        font-size: 50px;
+    }
+
+    .textL {
+        font-size: 40px;
+    }
+
+    .textM,
+    .textS {
+        font-size: 32px;
+    }
+
+    .containerSm {
+        max-width: 750px;
+    }
+
+    /* Hero */
+    .hero .container {
+        height: 310px;
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+
+    .hero .hero-heading {
+        padding-top: 55px;
+    }
+
+    .hero .hero-subtext {
+        padding-top: 20px;
+    }
+
+    /* bridging the gap */
+    .bridg {
+        padding: 0;
+        margin-bottom: 0px;
+    }
+
+    .bridg .container {
+        text-align: center;
+        background: none;
+        height: 690px;
+        padding: 0;
+        margin-bottom: 450px;
+        max-width: 850px;
+    }
+
+    .bridg-content {
+        display: none;
+    }
+
+    .bridg .mobile-bridg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .para1,
+    .para2 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .para1 {
+        padding: 10px 0;
+    }
+
+    .mobile-bridg {
+        align-items: center;
+    }
+
+    .para2 {
+        padding: 15px 0;
+    }
+
+    .bridg .redirect {
+        margin-top: 0;
+        padding: 20px 15px;
+        border-radius: 15px;
+    }
+
+    /* In Development */
+    .dev-products {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        padding-top: 15px;
+    }
+
+    .Product {
+        padding: 20px;
+        border-radius: 35px;
+    }
+
+    .card-heading {
+        font-size: 50px;
+    }
+
+    .prod1 {
+        width: 310px;
+    }
+
+    .prod2 {
+        width: 290px;
+    }
+
+    .card-subheading,
+    .dev-body {
+        font-size: 28px;
+        line-height: 1.5;
+    }
+
+    .card-subheading {
+        padding-bottom: 10px;
+    }
+
+    .dev-body {
+        padding: 25px 0;
+    }
+
+    .in-development .redirect {
+        font-size: 28px;
+        margin-top: 0;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+
+    /* FAQ */
+    h4 {
+        font-size: 35px;
+        width: 90%;
+    }
+
+    .faq-title {
+        line-height: 1.5;
+        padding-bottom: 0;
+    }
+
+    .faq-group-header {
+        padding: 10px;
+        line-height: 1.5;
+    }
+
+    .faq-group-body {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .faq-group-header i {
+        top: 15px;
+        font-size: 40px;
+    }
+
+    .faq-bodytext {
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 871px) {
+
+    /* General */
+    .textXXL,
+    .textXL {
+        font-size: 42px;
+    }
+
+    .textL {
+        font-size: 32px;
+    }
+
+    .textM,
+    .textS {
+        font-size: 26px;
+    }
+
+    /* Hero */
+    .hero .container {
+        height: 260px;
+        margin-bottom: 200px;
+    }
+
+    .hero .hero-heading {
+        padding-top: 48px;
+    }
+
+    .hero .hero-subtext {
+        padding-top: 20px;
+    }
+
+    /* Bridging the Gap */
+    .bridg .container {
+        margin-bottom: 420px;
+        max-width: 700px;
+    }
+
+    .bridg-content {
+        display: none;
+    }
+
+    .bridg .redirect {
+        padding: 15px 15px;
+        border-radius: 15px;
+    }
+
+    /* In Development */
+    .card-heading {
+        font-size: 38px;
+    }
+
+    .prod1 {
+        width: 290px;
+    }
+
+    .prod2 {
+        width: 270px;
+    }
+
+    .card-subheading,
+    .dev-body {
+        font-size: 25px;
+        line-height: 1.5;
+    }
+
+    .in-development .redirect {
+        font-size: 25px;
+    }
+
+    /* FAQ */
+    h4 {
+        font-size: 30px;
+        width: 85%;
+    }
+
+    .faq-group-header i {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 691px) {
+
+    /* General */
+    .textXXL,
+    .textXL {
+        font-size: 33px;
+    }
+
+    .textL {
+        font-size: 25px;
+    }
+
+    .textM,
+    .textS {
+        font-size: 22px;
+    }
+
+    /* Hero */
+    .hero .container {
+        height: 200px;
+    }
+
+    .hero .hero-heading {
+        padding-top: 30px;
+    }
+
+    .hero .hero-subtext {
+        padding-top: 20px;
+    }
+
+    /* Bridging the Gap */
+    .bridg .container {
+        margin-bottom: 220px;
+        max-width: 650px;
+    }
+
+    .super-sero {
+        width: 400px;
+    }
+
+    /* In Development */
+    .dev-products {
+        gap: 30px;
+        padding-top: 15px;
+    }
+
+    .Product {
+        padding: 20px;
+        border-radius: 35px;
+    }
+
+    .card-heading {
+        font-size: 33px;
+    }
+
+    .prod1 {
+        width: 270px;
+    }
+
+    .prod2 {
+        width: 250px;
+    }
+
+    .card-subheading,
+    .dev-body {
+        font-size: 25px;
+    }
+
+    .in-development .redirect {
+        font-size: 25px;
+    }
+
+    /* FAQ */
+    h4 {
+        font-size: 25px;
+        width: 85%;
+    }
+
+    .faq-group-header i {
+        top: 12px;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 581px) {
+
+    /* General */
+    .textXXL,
+    .textXL {
+        font-size: 28px;
+    }
+
+    .textL {
+        font-size: 20px;
+    }
+
+    .textM,
+    .textS {
+        font-size: 18px;
+    }
+
+    /* Hero */
+    .hero .container {
+        height: 150px;
+        margin-bottom: 200px;
+    }
+
+    .hero .hero-heading {
+        padding-top: 25px;
+    }
+
+    .hero .hero-subtext {
+        padding-top: 15px;
+    }
+
+    /* Bridging the Gap */
+    .bridg .container {
+        margin-bottom: 100px;
+        max-width: 480px;
+    }
+
+    .super-sero {
+        width: 350px;
+    }
+
+    .bridg .redirect {
+        padding: 8px 10px;
+    }
+
+    /* In Development */
+    .Product {
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    .card-heading {
+        font-size: 28px;
+    }
+
+    .prod1 {
+        width: 240px;
+    }
+
+    .prod2 {
+        width: 220px;
+    }
+
+    .card-subheading,
+    .dev-body {
+        font-size: 20px;
+    }
+
+    .card-subheading {
+        padding-bottom: 15px;
+    }
+
+    .dev-body {
+        padding: 25px 0;
+    }
+
+    .in-development .redirect {
+        font-size: 20px;
+    }
+
+    /* FAQ */
+    h4 {
+        font-size: 20px;
+        width: 85%;
+    }
+
+    .faq-group-header i {
+        top: 10px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 478px) {
+
+    /* General */
+    .textXXL,
+    .textXL {
+        font-size: 25px;
+    }
+
+    .textL {
+        font-size: 17px;
+    }
+
+    .textM,
+    .textS {
+        font-size: 16px;
+    }
+
+    /* Hero */
+    .hero .container {
+        height: 150px;
+        margin-bottom: 200px;
+    }
+
+    .new-line {
+        display: block;
+    }
+
+    /* bridging the gap */
+    .bridg {
+        padding: 0;
+        margin-bottom: 0px;
+    }
+
+    .bridg .container {
+        margin-bottom: 50px;
+        max-width: 400px;
+    }
+
+    .super-sero {
+        width: 300px;
+    }
+
+    /* In Development */
+    .Product {
+        padding: 20px;
+        border-radius: 35px;
+    }
+
+    .card-heading {
+        font-size: 25px;
+    }
+
+    .prod1 {
+        width: 220px;
+    }
+
+    .prod2 {
+        width: 200px;
+    }
+
+    .card-subheading,
+    .dev-body {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .card-subheading {
+        font-style: italic;
+        font-weight: 500;
+        padding-bottom: 10px;
+    }
+
+    .dev-body {
+        padding: 25px 0;
+    }
+
+    .in-development .redirect {
+        font-size: 18px;
+        margin-top: 0;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+
+    /* FAQ */
+    h4 {
+        font-size: 17px;
+        width: 90%;
+    }
+
+    .faq-title {
+        line-height: 1.5;
+        padding-bottom: 0;
+    }
+
+    .faq-group-header {
+        padding: 10px;
+        line-height: 1.5;
+    }
+
+    .faq-group-body {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .faq-group-header i {
+        top: 7px;
+        font-size: 25px;
+    }
+
+    .faq-bodytext {
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 448px) {
+    .bridg .container {
+        margin-bottom: 10px;
+    }
+
+    .hero-content .new-line {
+        display: none;
+    }
+
+    .hero .hero-heading {
+        padding-top: 28px;
+    }
+
+    .hero .hero-subtext {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 415px) {
+    /*Hero*/
+    .hero .container {
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+
+    .hero .hero-heading {
+        padding-top: 15px;
+    }
+
+    /*Brdiging the Gap*/
+    .bridg .container {
+        height: 600px;
+        max-width: 330px;
+        margin-bottom: 0px;
+        padding-bottom: 0;
+    }
+
+    .super-sero {
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 325px) {
+    .hero .hero-heading {
+        padding-top: 8px;
+    }
+
+    .bridg .container {
+        max-width: 280px;
+    }
+}

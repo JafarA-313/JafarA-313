@@ -1,0 +1,33 @@
+.pdf {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.pdf .efdate {
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.pdf .header {
+    font-family: Poppins;
+    font-weight: 700;
+}
+
+.pdf .subheading {
+    font-family: Comfortaa;
+    font-weight: 700;
+    padding-bottom: 25px;
+    line-height: 1.8;
+}
+
+.pdf .subheading i{
+    font-size: 15px;
+}
+
+.pdf .space {
+    padding-left: 25px;
+}
+
+.pdf .subheading-header {
+    font-family: Poppins;
+} 

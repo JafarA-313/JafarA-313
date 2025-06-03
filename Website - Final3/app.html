@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PocketLab Testing - PocketLab App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/prod.css">
+
+    <link rel="shortcut icon" href="Images/logoPLHeader.png">
+
+    <!-- Alata Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+    <!-- Comforttaa Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="left-section">
+                <img class="header-logo" src="Images/logoPLHeader.png">
+
+                <p class="left-text">
+                    PocketLab Testing
+                </p>
+            </div>
+            <div class="right-section">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="aboutus.html">About Us</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class = "nav-link">Products <i class="down-arrow fas fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li>
+                                <a class="prodName" href="irondef.html">Iron Deficiency Test Kit</a>
+                            </li>
+                            <li>
+                                <a class="prodName" href="app.html">PocketLab Companion App</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Hamburger Button-->
+            <button class="hamburger-button">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </button>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="aboutus.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Products <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="irondef.html">Iron Deficiency Test Kit</a>
+                            </li>
+
+                            <li>
+                                <a href="app.html">PocketLab Companion App</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="product">
+        <h1 class="product-header textXXL">
+            PocketLab Companion App
+        </h1>
+        <div class="container">
+            <div class="pg-content">
+                <div class="app-info">
+                    <div class="features">
+                        <p class="app-intro textM">
+                            Featuring...
+                        </p>
+                        <p class="app-info-text textS">
+                            <i class="fas fa-check-square"></i> Built-in result interpretation
+                            <br><i class="fas fa-check-square"></i> Symptom tracking
+                            <br><i class="fas fa-check-square"></i> Integrated provider communication
+                            <br><i class="fas fa-check-square"></i> Health education resources
+                        </p>
+                    </div>
+
+                    <div class="what-can-it-do">
+                        <p class="app-intro textM">
+                            Built to...
+                        </p>
+                        <p class="app-info-text textS">
+                            <i class="fas fa-check-square"></i> Improve health literacy
+                            <br><i class="fas fa-check-square"></i> Promote timely clinical follow-up
+                            <br><i class="fas fa-check-square"></i> Support continuity of care
+                        </p>
+                    </div>
+                </div>
+                <img class="image-test" src="Images/underconcSero.png">
+            </div>
+
+            <p class="underdev textM">
+                Under development - Join our waitlist to get notified of the launch!
+            </p>
+
+            <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdxWXPQz2TgM30NrfdRtVl-DygPdZgyimGCEOUwYTLUE8fRPg/viewform?usp=sharing&ouid=114255692549766324377" target = "_blank">
+                <button class="waitlist">
+                    <p>
+                        Join the waitlist!
+                    </p>
+                </button>
+            </a>
+        </div>
+    </section>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h5 class="company-name textS">
+                PocketLab Testing Inc.
+            </h5>
+            <div class="footer-content">
+                <div class="footer-group">
+                    <div class="schedule-meeting-card">
+                        <h5 class="schedule-meeting-card-text textXS">
+                            Click below to shedule a meeting with us!
+                            <br><span class="schedule-meeting-card-subtext textXS"></span>
+                        </h5>
+
+                        <a href="https://calendly.com/pocketlabtestinginc/30min" target="_blank">
+                            <button class="meeting textXS">
+                                Schedule a meeting
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-group">
+                    <h5 class="textXS">
+                        Contact
+                    </h5>
+                    <ul class="contact-info">
+                        <li>
+                            <h5 class="footer-group-subtext textXS">info@pocketlab.ca</h5>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-group">
+                    <h5 class="textXS">
+                        Socials
+                    </h5>
+                    <ul class="socials-logo">
+                        <li>
+                            <a class="account" href="https://www.linkedin.com/company/pocketlab-testing/"
+                                target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-group">
+                    <h5 class="textXS">
+                        Legal
+                    </h5>
+                    <ul class="documents">
+                        <li>
+                            <a href="termsofuse.html">
+                                <h5 class="footer-group-subtext textXS">Terms of Use</h5>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="privacypolicy.html">
+                                <h5 class="footer-group-subtext textXS">Privacy Policy</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="disclaimer textXS">
+                Disclaimer: The information provided on this website is for educational purposes only and should not be
+                construed as
+                medical advice. Always consult with a qualified healthcare professional regarding any medical concerns
+                or conditions.
+            </p>
+        </div>
+    </footer>
+    <script src="mobilemenu.js"></script>
+</body>
+
+</html>

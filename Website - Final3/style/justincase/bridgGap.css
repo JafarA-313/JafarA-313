@@ -1,0 +1,49 @@
+.bridg {
+    margin-top: 70px;
+    margin-bottom: 100px;
+    /*border: solid;*/
+}
+
+.bridg .container {
+    /*border: solid;*/
+    background: url("../Images/CaptainBo.png") no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    /*background-color: rgb(162, 199, 255);*/
+    border-radius: 35px;
+    height: 450px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+
+    max-width: 1100px;  
+}
+
+.bridg-header {
+    font-size: 40px;
+    color: #27364d;
+}
+
+.bridg-content {
+    display: flex;
+    flex-direction: row;
+    font-family: Comfortaa;
+    /*color: rgb(119, 119, 119);*/
+    padding-top: 20px;
+    height: 100%;
+}
+
+.para1 {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Poppins;
+    line-height: 35px;
+    width: 65%;
+    padding-bottom: 28px;
+}
+
+.para2 {
+    font-size: 20px;
+    width: 60%
+}

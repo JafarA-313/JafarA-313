@@ -1,0 +1,500 @@
+.text {
+    line-height: 1.5;
+    padding-right: 30px;
+}
+
+.content-mobile {
+    display: none;
+}
+
+.sero-greet {
+    width: 800px;
+}
+
+/* About Us */
+.about-us {
+    padding-top: 180px;
+    margin-bottom: 70px;
+}
+
+.about-us .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.us-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-top: 35px;
+}
+
+/* Our Story */
+.our-story {
+    margin-top: 160px;
+    margin-bottom: 120px;
+}
+
+.our-story h1 {
+    line-height: 1.2;
+}
+
+.our-story .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.story-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 35px;
+}
+
+/* Meet the Team */
+.meet-the-team {
+    padding: 10px 0;
+    margin-bottom: 50px;
+}
+
+.team-header {
+    margin-bottom: 35px;
+}
+
+.team-group {
+    font-family: Poppins;
+    background-color: rgb(147, 185, 229);
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.team-group-header {
+    position: relative;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+h4 {
+    font-family: Poppins;
+    font-size: 40px;
+}
+
+.team-group-header i {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.team-group-body {
+    padding-top: 12px;
+}
+
+.team-group-body-header {
+    font-weight: 500;
+    font-style: italic;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 60px;
+    padding: 0 10px;
+    padding-bottom: 30px;
+}
+
+.teammate {
+    background-color: #eaf2ff;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.08);
+    padding: 15px;
+    border-radius: 45px;
+}
+
+.about-me {
+    padding: 15px;
+    line-height: 1.5;
+}
+
+.about {
+    font-weight: 500;
+}
+
+.team-group-body {
+    display: none;
+}
+
+.team-group-body.open {
+    display: block;
+}
+
+/*Achievements*/
+.achievments-content {
+    padding-top: 35px;;
+}
+
+
+/* media queries */
+/* Desktop/Landscape */
+@media (max-width: 1300px) {
+    .textM {
+        font-size: 25px;
+    }
+
+    .about-us .container,
+    .our-story .container,
+    .meet-the-team .container {
+        max-width: 1100px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    /* General */
+    .textXXL {
+        font-size: 55px;
+    }
+
+    .textXL {
+        font-size: 50px;
+    }
+
+    .textL {
+        font-size: 35px;
+    }
+
+    .textM {
+        font-size: 28px;
+    }
+
+    .textS {
+        font-size: 25px;
+    }
+
+    .about-us .container,
+    .our-story .container,
+    .meet-the-team .container {
+        max-width: 900px;
+    }
+
+    .sero-greet {
+        width: 280px;
+    }
+
+    /* About Us */
+    .about-us {
+        padding-top: 165px;
+    }
+
+    /* Our Story */
+    .our-story {
+        margin-bottom: 150px;
+    }
+
+    .our-story h1 {
+        padding-right: 15px;
+    }
+
+    /* Meet the Team */
+    .team-group-body-header {
+        text-align: center;
+    }
+
+    .portraits {
+        width: 180px;
+        border-radius: 20px;
+    }
+}
+
+/* Mobile/Portrait Layout */
+@media (max-width: 961px) {
+
+    /* General */
+    .textXXL,
+    .textXL {
+        font-size: 50px;
+    }
+
+    .textL {
+        font-size: 40px;
+    }
+
+    .textM,
+    .textS {
+        font-size: 32px;
+    }
+
+    .text {
+        padding-right: 0;
+    }
+
+    .about-us .container,
+    .our-story .container,
+    .meet-the-team .container {
+        max-width: 850px;
+    }
+
+    .sero-greet {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 300px;
+    }
+
+    .content-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* About Us */
+    .about-us .container {
+        text-align: center;
+    }
+
+    .us-content {
+        display: none;
+    }
+
+    /* Our Story */
+    .our-story .container {
+        text-align: center;
+    }
+
+    .our-story h1 {
+        text-align: center;
+    }
+
+    .story-content {
+        display: none;
+    }
+
+    /* Meet the Team */
+    h4 {
+        font-size: 35px;
+    }
+
+    .meet-the-team .container {
+        text-align: center;
+    }
+
+    .team {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 20px;
+    }
+
+    .team-group-body-header {
+        padding: 0;
+        padding-bottom: 25px;
+        line-height: 1.5;
+    }
+
+    .about-me {
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 871px) {
+
+    /* General */
+    .textXXL,
+    .textXL {
+        font-size: 42px;
+    }
+
+    .textL {
+        font-size: 32px;
+    }
+
+    .textM,
+    .textS {
+        font-size: 26px;
+    }
+
+    .about-us .container,
+    .our-story .container,
+    .meet-the-team .container {
+        max-width: 700px;
+    }
+
+    .sero-greet {
+        padding-top: 10px;
+        width: 250px;
+    }
+
+    /* Meet the team */
+    h4 {
+        font-size: 30px;
+    }
+
+    .team-group-header i {
+        top: 5px;
+        font-size: 40px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 691px) {
+
+    /* General */
+    .textXXL,
+    .textXL {
+        font-size: 33px;
+    }
+
+    .textL {
+        font-size: 25px;
+    }
+
+    .textM,
+    .textS {
+        font-size: 22px;
+    }
+
+    .about-us .container,
+    .our-story .container,
+    .meet-the-team .container {
+        max-width: 650px;
+    }
+
+    .sero-greet {
+        padding-top: 10px;
+        width: 200px;
+    }
+
+    /* Meet the Team */
+    h4 {
+        font-size: 25px;
+    }
+
+    .team-group-header i {
+        font-size: 35px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 581px) {
+
+    /* General */
+    .textXXL,
+    .textXL {
+        font-size: 28px;
+    }
+
+    .textL {
+        font-size: 25px;
+    }
+
+    .textM,
+    .textS {
+        font-size: 18px;
+    }
+
+    .about-us .container,
+    .our-story .container,
+    .meet-the-team .container {
+        max-width: 480px;
+    }
+
+    .sero-greet {
+        padding-top: 10px;
+        width: 150px;
+    }
+
+    /* About Us */
+    .about-us {
+        padding-top: 150px;
+        margin-bottom: 100px;
+    }
+
+    /* Meet the Team */
+    h4 {
+        font-size: 20px;
+    }
+
+    .team-group-header i {
+        top: 7px;
+        font-size: 30px;
+    }
+
+    .team-header {
+        margin-bottom: 15px;
+    }
+
+    .team-group {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 478px) {
+
+    /* General */
+    .textXXL,
+    .textXL {
+        font-size: 25px;
+    }
+
+    .textL {
+        font-size: 20px;
+    }
+
+    .textM,
+    .textS {
+        font-size: 16px;
+    }
+
+    .about-us .container,
+    .our-story .container,
+    .meet-the-team .container {
+        max-width: 400px;
+    }
+
+    .sero-greet {
+        padding-top: 10px;
+        width: 100px;
+    }
+
+    /* About Us */
+    .about-us {
+        padding-top: 150px;
+        margin-bottom: 80px;
+    }
+
+    /* Meet the Team */
+    h4 {
+        font-size: 17px;
+    }
+
+    .team-group-header i {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 448px) {
+
+    /* About Us */
+    .about-us {
+        padding-top: 150px;
+        margin-bottom: 0px;
+    }
+
+    /* Our Story */
+    .our-story {
+        margin-bottom: 150px;
+    }
+
+    /* Meet the Team */
+    .teammate-group {
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+}
